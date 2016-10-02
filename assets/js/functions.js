@@ -30,5 +30,18 @@ function setTimeArea() {
       document.getElementById('AMPM').innerHTML =
       ampm;
     }
+}
 
+// FUNCTION TO SET nameSpace
+function nameSet() {
+    var name = [input(entername /* continue */)];
+    if(name.length =< 0){
+      name = "";
+    }
+    else if(name.length => 20)
+      name = "";
+    }
+    else {
+      name /* continue */
+    }
 }

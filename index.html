@@ -11,15 +11,55 @@
     <!-- Then main stylesheets -->
     <link href="assets/css/css/main.css" rel="stylesheet">
     <link href="assets/css/animate.css" rel="stylesheet">
-    <!-- Favicon Element -->
   </head>
-<body onload="localTime(); setTimeArea();">
-  <div class="container">
-    <div id="timeBox">
+<body onload="localTime()">
+  <!-- main container -->
+  <div class="container1 row" onload="setTimeArea()">
+    <!-- weather box -->
+    <div id="weatherBox" class="col-lg-4">
+      <div class="weather">
+        <h1 class="sectionTitle">Weather</h1>
+      </div>
+    </div>
+    <!-- end weather box -->
+    <!-- time box -->
+    <div id="timeBox" class="col-lg-4">
       <h1 id="timeAct"></h1>
-      <h1 id="AMPM"></h1>
+      <h1 id="AMPM####"></h1>
+    </div>
+    <!-- end time box -->
+    <!-- note box -->
+    <div id="noteBox" class="col-lg-4">
+      <h1 class="sectionTitle">Notes</h1>
     </div>
   </div>
+  <!-- end time box -->
+  <!-- middle ground -->
+  <div id="spaceMaker">
+    <div id="nameSpace">
+      <input form="" id="nameEnter">
+      <h1 id="nameInput">Test</h1>
+    </div>
+
+  </div>
+  <div class="container1 row">
+  <!-- end middle ground -->
+  <!-- contact box -->
+    <div id="contactBox" class="col-lg-4">
+      <div class="contact">
+        <h1 class="sectionTitle">Contacts</h1>
+      </div>
+    </div>
+    <!-- end contact box -->
+    <div class="col-lg-4">
+    </div>
+  <!-- news box -->
+  <div id="newsBox" class="col-lg-4">
+    <div class="news">
+      <h1 class="sectionTitle">News</h1>
+    </div>
+  </div>
+</div>
 <script src="assets/js/functions.js"></script>
 </body>
 </html>
