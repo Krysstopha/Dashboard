@@ -19,33 +19,32 @@ function checkTime(i) {
 
 // FUNCTION TO SET AM OR PM -- INCOMPLETE
 function setTimeArea() {
-    var ampm = ["am", "pm"];
+    var type = ["am", "pm"];
     var today = new Date();
     var h = today.getHours();
     if(h < 12) {
-      document.getElementById("ampm").innerHTML = ampm[0];
+        document.getElementById("ampm").innerHTML = type[0];
     }
     else {
-      document.getElementById("ampm").innerHTML = ampm[1];
+        document.getElementById("ampm").innerHTML = type[1];
     }
-}
-
-// FUNCTION TO SET nameSpace -- INCOMPLETE
+} 
+/* FUNCTION TO SET nameSpace -- INCOMPLETE
 function nameSet() {
-    var name = [input(entername /* continue */)];
+    var name = [input(entername /* continue )];
     if(name.length =< 0){
       name = "";
     }
-    else if(name.length => 20)
+    else if(name.length >= 20)
       name = "";
     }
     else {
-      name /* continue */
+      name /* continue 
     }
-}
-
+} */
+ 
 // FUNCTION TO CHOOSE MORNING OR AFTERNOON OR EVENING
-function greetingSet() {
-    var greetArray = ["Good Morning", "Good Afternoon", "Good Evening"];
-    if()
-}
+//function greetingSet() {
+//    var greetArray = ["Good Morning", "Good Afternoon", "Good Evening"];
+//    if()
+//}

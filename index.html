@@ -12,9 +12,9 @@
     <link href="assets/css/css/main.css" rel="stylesheet">
     <link href="assets/css/animate.css" rel="stylesheet">
   </head>
-<body>
+<body onload="javascript:localTime()">
   <!-- main container -->
-  <div class="container1 row" onload="setTimeArea()">
+  <div class="container1 row">
     <!-- weather box -->
     <div id="weatherBox" class="col-lg-4">
       <div class="weather">
@@ -34,7 +34,7 @@
   <!-- end time box -->
   <!-- middle ground -->
   <div id="spaceMaker">
-    <div id="timeBox" onload="localTime()">
+    <div id="timeBox">
       <h1 id="timeAct"></h1>
       <h1 id="ampm"></h1>
     </div>
