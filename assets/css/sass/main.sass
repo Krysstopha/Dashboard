@@ -11,22 +11,6 @@ $white: #E2E2E3
 body
   background: url('http://www.giga.de/wp-content/gallery/os-x-mavericks-wallpaper/mountain-range-1-rcm1920x0.jpg')
   width: 1900px
-// TIME SECTION
-#timeAct
-  color: black
-  font-size: 100px
-
-#timeBox
-  display: flex
-  justify-content: center
-  align-items: center
-  margin: 0 auto
-
-// TIME INPUT
-#AMPM
-  font-size: 60px
-  color: $white
-  border: 2px solid black
 
 // CONTAINER DEFAULTS
 .container1
@@ -34,6 +18,25 @@ body
   justify-content: center
   text-align: center
   //align-items: center
+  .sectionTitle
+    font-size: 40px
+    color: $white
+
+// TIME SECTION
+#timeBox
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0 auto
+  width: 700px
+  height: 500px
+  #timeAct
+    color: white
+    font-size: 200px
+    #ampm
+      font-size: 60px
+      color: white
+      margin-bottom: 127px
 
 // SECTION TITLES
 .sectionTitle
@@ -43,16 +46,61 @@ body
 // MIDDLE GROUND
 #spaceMaker
   width: 100%
-  height: 500px
+  height: 600px
   margin-top: 90px
   margin-bottom: 90px
 
-#nameSpace
+  #nameSpace
+    display: flex
+    justify-content: center
+    align-items: center
+
+    #nameInput
+      font-size: 60px
+      color: $white
+      text-align: center
+
+// OVER LAYS -- WEATHER + NOTES -- DEFAULTS ASWELL --------------------------------------
+
+.expandtitle
+  font-size: 100px
+  color: #769fff
+
+.closeFont
+  font-size: 64px
+  position: absolute
+  left: 1400px
+
+.isActive
+  display: none
+
+#weatherExit, #newsExit, #notesExit, #settingsExit
+
+#weatherOver, #newsOver, #notesOver, #settingsOver
+  width: 1500px
+  height: 800px
+  background: rgba(0,0,0,0.5)
   display: flex
   justify-content: center
-  align-items: center
 
-#nameInput
-  font-size: 60px
-  color: $white
-  text-align: center
+  position: absolute
+  left: -2000px
+  top: 80px
+
+  .mainEvent
+    margin-top: 100px
+    width: 1000px
+    height: 200px
+    background: rgba(0,0,0,0.8)
+
+  .secondEvent
+    width: 1000px
+    height: 300px
+    background: rgba(0,0,0,0.9)
+
+// OVERLAYS -- NEWS
+
+
+// OVERLAYS -- NOTES
+
+// OVERLAYS -- SETTINGS

@@ -11,52 +11,69 @@
     <!-- Then main stylesheets -->
     <link href="assets/css/css/main.css" rel="stylesheet">
     <link href="assets/css/animate.css" rel="stylesheet">
+    <!-- Scripts -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/functions.js"></script>
   </head>
-<body onload="javascript:localTime()">
-  <!-- main container -->
-  <div class="container1 row">
-    <!-- weather box -->
-    <div id="weatherBox" class="col-lg-4">
-      <div class="weather">
-        <h1 class="sectionTitle">Weather</h1>
-      </div>
-    </div>
-    <!-- end weather box -->
-    <!-- time box -->
-    <div class="col-lg-4">
+<body>
+    <!-- main container -->
+    <div class="container1 row">
+        <!-- weather box -->
+        <div id="weatherBox" class="col-lg-2">
+                <h1 class="sectionTitle" id="wClick">Weather</h1>
+        </div>
+            <div id="weatherOver">
+                <div id="weatherExit">
+                  <p class="closeFont">X</p>
+                </div>
+                <div class="mainEvent">
+                </div>
+                <div class="secondEvent">
+                </div>
+            </div>
+        <!-- end weather box -->
+        <!-- time box -->
+        <div class="col-lg-8">
+        </div>
+        <!-- end time box -->
+        <!-- note box -->
+        <div id="noteBox" class="col-lg-2">
+            <h1 class="sectionTitle" id="noClick">Notes</h1>
+        </div>
+        <div id="notesOver">
+            <div id="notesExit"><p class="closeFont">X</p></div>
+        </div>
     </div>
     <!-- end time box -->
-    <!-- note box -->
-    <div id="noteBox" class="col-lg-4">
-      <h1 class="sectionTitle">Notes</h1>
+    <!-- middle ground -->
+    <div id="spaceMaker">
+        <div id="timeBox">
+            <h1 id="timeAct"></h1>
+            <h1 id="ampm"></h1>
+        </div>
     </div>
-  </div>
-  <!-- end time box -->
-  <!-- middle ground -->
-  <div id="spaceMaker">
-    <div id="timeBox">
-      <h1 id="timeAct"></h1>
-      <h1 id="ampm"></h1>
-    </div>
-  </div>
-  <div class="container1 row">
-  <!-- end middle ground -->
-  <!-- contact box -->
-    <div id="contactBox" class="col-lg-4">
-      <div class="contact">
-        <h1 class="sectionTitle">Contacts</h1>
+    <!-- end middle ground -->
+    <div class="container1 row">
+      <!-- news box -->
+      <div id="newsBox" class="col-lg-2">
+              <h1 class="sectionTitle" id="nClick">News</h1>
       </div>
+      <div id="newsOver">
+        <div id="newsExit"><p class="closeFont">X</p></div>
+        </div>
+      <!-- end news box -->
+      <div class="col-lg-8">
+      </div>
+      <!-- settings -->
+      <div class="col-lg-2">
+          <h1 class="sectionTitle" id="sClick">Settings</h1>
+      </div>
+      <div id="settingsOver">
+          <div id="settingsExit"><p class="closeFont">X</p></div>
+      </div>
+    <!-- end settings -->
     </div>
-    <!-- end contact box -->
-    <div class="col-lg-4">
-    </div>
-  <!-- news box -->
-  <div id="newsBox" class="col-lg-4">
-    <div class="news">
-      <h1 class="sectionTitle">News</h1>
-    </div>
-  </div>
 </div>
-<script src="assets/js/functions.js"></script>
+
 </body>
 </html>
