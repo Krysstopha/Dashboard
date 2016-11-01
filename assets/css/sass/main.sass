@@ -1,18 +1,22 @@
 @import 'https://fonts.googleapis.com/css?family=Lato'
 @import 'https://fonts.googleapis.com/css?family=Megrim'
 
+// VARIABLES
 $white: #E2E2E3
 
+// GLOBAL STYLES
 *
   font-family: "Lato"
   margin: 0
   padding: 0px
 
-body
-  background: url('http://www.giga.de/wp-content/gallery/os-x-mavericks-wallpaper/mountain-range-1-rcm1920x0.jpg')
+#body
+  //background: url('../../imgs/1.jpg')
   width: 1900px
 
-// CONTAINER DEFAULTS
+.textshadow
+  text-shadow: 0 0 20px rgba(0,0,0,0.9)
+
 .container1
   display: flex
   justify-content: center
@@ -21,47 +25,38 @@ body
   .sectionTitle
     font-size: 40px
     color: $white
+    border-radius: 30%
+    text-shadow: 0 0 10px rgba(0,0,0,0.5)
 
 // TIME SECTION
-#timeBox
-  display: flex
-  justify-content: center
-  align-items: center
-  margin: 0 auto
-  width: 700px
-  height: 500px
-  #timeAct
-    color: white
-    font-size: 200px
-    #ampm
-      font-size: 60px
-      color: white
-      margin-bottom: 127px
-
-// SECTION TITLES
-.sectionTitle
-  font-size: 40px
-  color: $white
-
-// MIDDLE GROUND
 #spaceMaker
   width: 100%
   height: 600px
   margin-top: 90px
   margin-bottom: 90px
-
-  #nameSpace
+  #timeBox
     display: flex
     justify-content: center
     align-items: center
+    margin: 0 auto
+    width: 700px
+    height: 500px
+    color: $white
+    #timeAct
+      color: white
+      font-size: 200px
+      #ampm
+        font-size: 60px
+        color: $white
+        margin-bottom: 127px
 
-    #nameInput
-      font-size: 60px
-      color: $white
-      text-align: center
+  #date
+    margin-top: -150px
+    color: $white
+    font-size: 75px
+    text-align: center
 
-// OVER LAYS -- WEATHER + NOTES -- DEFAULTS ASWELL --------------------------------------
-
+// OVER LAYS -- DEFAULTS ASWELL --------------------------------------
 .expandtitle
   font-size: 100px
   color: #769fff
@@ -71,35 +66,50 @@ body
   position: absolute
   left: 1400px
 
-.isActive
-  display: none
-
-#weatherExit, #newsExit, #notesExit, #settingsExit
+.eventTitle
+  font-size: 80px
+  color: $white
+  text-align: center
 
 #weatherOver, #newsOver, #notesOver, #settingsOver
   width: 1500px
   height: 800px
-  background: rgba(0,0,0,0.5)
+  background: rgba(0,0,0,0.9)
   display: flex
   justify-content: center
-
+  border-radius: 20px
   position: absolute
   left: -2000px
   top: 80px
-
+  .eventDesc
+    font-size: 25px
+    color: $white
+    position: absolute
+    top: 300px
+    left: 40px
   .mainEvent
     margin-top: 100px
     width: 1000px
     height: 200px
-    background: rgba(0,0,0,0.8)
+    color: $white
+    #temp, #loc, #main, #desc
+      font-size: 80px
 
   .secondEvent
     width: 1000px
     height: 300px
-    background: rgba(0,0,0,0.9)
+    //background: rgba(0,0,0,0.9)
 
 // OVERLAYS -- NEWS
+.storyStyle
+  font-size: 35px
+  color: $white
+  text-decoration: none
+  text-align: center
 
+.storyStyle:hover
+  text-decoration: none
+  color: #769fff
 
 // OVERLAYS -- NOTES
 

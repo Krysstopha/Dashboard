@@ -14,26 +14,25 @@
     <!-- Scripts -->
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script src="assets/js/functions.js"></script>
-    <script src="assets/js/weather.js"></script>
   </head>
-<body>
+<body id="body">
     <!-- main container -->
     <div class="container1 row">
         <!-- weather box -->
         <div id="weatherBox" class="col-lg-2">
-                <h1 class="sectionTitle" id="wClick">Weather</h1>
+            <h1 class="sectionTitle textshadow zoomInLeft animated" id="wClick">Weather</h1>
         </div>
             <div id="weatherOver">
                 <div id="weatherExit">
-                  <p class="closeFont">X</p>
+                    <p class="closeFont">X</p>
                 </div>
+                <span class="eventTitle">Live Weather</span>
+                <span class="eventDesc">Provided by: Open Weather Maps</span>
                 <div class="mainEvent">
-                  <h1 id="temp">Q</h1>
-                  <h1 id="loc">Q</h1>
-                  <h1 id="main">Q</h1>
-                  <h1 id="desc">Q</h1>
-                </div>
-                <div class="secondEvent">
+                    <h1 id="temp"></h1>
+                    <h1 id="loc"></h1>
+                    <h1 id="main"></h1>
+                    <h1 id="desc"></h1>
                 </div>
             </div>
         <!-- end weather box -->
@@ -43,7 +42,7 @@
         <!-- end time box -->
         <!-- note box -->
         <div id="noteBox" class="col-lg-2">
-            <h1 class="sectionTitle" id="noClick">Notes</h1>
+            <h1 class="sectionTitle textshadow zoomInRight animated" id="noClick">Notes</h1>
         </div>
         <div id="notesOver">
             <div id="notesExit"><p class="closeFont">X</p></div>
@@ -53,28 +52,44 @@
     <!-- middle ground -->
     <div id="spaceMaker">
         <div id="timeBox">
-            <h1 id="timeAct"></h1>
-            <h1 id="ampm"></h1>
+            <h1 id="timeAct" class="textshadow"></h1>
+            <h1 id="ampm" class="textshadow"></h1>
         </div>
+        <h1 id="date" class="textshadow"></h1>
     </div>
     <!-- end middle ground -->
     <div class="container1 row">
       <!-- news box -->
       <div id="newsBox" class="col-lg-2">
-              <h1 class="sectionTitle" id="nClick">News</h1>
+              <h1 class="sectionTitle textshadow zoomInLeft animated" id="nClick">News</h1>
       </div>
       <div id="newsOver">
         <div id="newsExit"><p class="closeFont">X</p></div>
+        <span class="eventTitle">Live News</span>
+        <span class="eventDesc">Provided by: ABC Australia<br>Accessed from News API</span>
+        <div class="mainEvent">
+          <a id="story0" href="" class="storyStyle" target="_blank"></a><br>
+          <a id="story1" href="" class="storyStyle" target="_blank"></a><br>
+          <a id="story3" href="" class="storyStyle" target="_blank"></a><br>
+          <a id="story2" href="" class="storyStyle" target="_blank"></a><br>
+          <a id="story4" href="" class="storyStyle" target="_blank"></a><br>
+          <a id="story5" href="" class="storyStyle" target="_blank"></a><br>
+          <a id="story6" href="" class="storyStyle" target="_blank"></a><br>
+          <a id="story7" href="" class="storyStyle" target="_blank"></a><br>
+        </div>
         </div>
       <!-- end news box -->
       <div class="col-lg-8">
       </div>
       <!-- settings -->
       <div class="col-lg-2">
-          <h1 class="sectionTitle" id="sClick">Settings</h1>
+          <h1 class="sectionTitle textshadow zoomInRight animated" id="sClick">Settings</h1>
       </div>
       <div id="settingsOver">
           <div id="settingsExit"><p class="closeFont">X</p></div>
+          <div class="mainEvent">
+
+          </div>
       </div>
     <!-- end settings -->
     </div>
