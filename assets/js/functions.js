@@ -159,13 +159,14 @@ var settingsSlide = function() {
 };
 
 // FUNCTION TO RANDOMMIZE BACKGROUND IMAGE -- INCOMPLETE
-var a = Math.floor((Math.random() * 10) + 1);
-var b = "assets/imgs/" + a + ".jpg";
-console.log(b);
-$(document).ready(function(){
-  $("#body").attr("style", "background-image: url(\""+b+"\")");
-});
-
+var bgSelect = function() {
+  var a = Math.floor((Math.random() * 10) + 1);
+  var b = "assets/imgs/" + a + ".jpg";
+  console.log(b);
+  $(document).ready(function(){
+    $("#body").attr("style", "background-image: url(\""+b+"\")");
+  });
+}
 // WEATHER API FUNCTION -- COMPLETE
 var APPID = "ede815877b3dea2d8189dfa6b5e8d50f";
 var unit = "metric";
@@ -255,4 +256,5 @@ window.onload = function() {
   updateById(2147714);
   updateByKey();
   setDate();
+  bgSelect();
 };
